@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-app: #0a0a0a;
+    --color-panel: #141414;
+    --color-lines: #333;
+    --color-nav-active: #ffffff0f;
+    --color-button-main: #4a0fa3;
+}

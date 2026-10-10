@@ -1,0 +1,28 @@
+{
+    "name": "@two-device-synchronization/database",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "typecheck": "tsc --noEmit",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate",
+        "db:push": "drizzle-kit push"
+    },
+    "dependencies": {
+        "drizzle-orm": "^0.45.3"
+    },
+    "devDependencies": {
+        "drizzle-kit": "^0.31.11"
+    }
+}

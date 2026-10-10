@@ -1,0 +1,25 @@
+{
+    "name": "Two-device-synchronization",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "mobile": "pnpm --filter @two-device-synchronization/mobile start",
+        "desktop": "pnpm --filter @two-device-synchronization/desktop dev",
+        "typecheck": "pnpm -r typecheck",
+        "build": "pnpm -r build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devEngines": {
+        "packageManager": {
+            "name": "pnpm",
+            "version": "12.9.1",
+            "onFail": "download"
+        }
+    },
+    "packageManager": "pnpm@12.9.1",
+    "type": "module"
+}
